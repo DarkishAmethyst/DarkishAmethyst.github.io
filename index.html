@@ -1,21 +1,38 @@
+<body>    <h1>Social Links:</h1>
+<a href="https://www.youtube.com/@darkishamethyst">YouTube</a><br>
+<a href="https://discord.gg/huE2vbKqat">Discord</a><br>
+<a href="https://www.twitch.tv/darkishamethyst">Twitch</a><br>
+<body>    <h1>Social Links:</h1>
+  <div class="intro-container">
+      </div>
+</body> ```
+
+Because of this, the browser is likely ignoring the first `<body>` tag and the content inside it, or it's misinterpreting the closing `</body>` tags, causing your image and text to fall outside of the structure you intended.
+
+### ✅ The Fix: Merge and Correct Your HTML
+
+You need to **combine all your content** into a single `<body>` block. Also, your social links (`<a>` tags) should be *outside* the `intro-container`.
+
+Here is the corrected and cleaned-up version of your `index.html`:
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
   <title>DarkishAmethyst</title>
 </head>
-<body>
-  <h1>Social Links:</h1>
-<a href="https://www.youtube.com/@darkishamethyst">YouTube</a><br>
-<a href="https://discord.gg/huE2vbKqat">Discord</a><br>
-<a href="https://www.twitch.tv/darkishamethyst">Twitch</a><br>
-<body>
-  <h1>Social Links:</h1>
-  <div class="intro-container">
+<body>  <h1>Social Links:</h1>
+  <a href="https://www.youtube.com/@darkishamethyst">YouTube</a><br>
+  <a href="https://discord.gg/huE2vbKqat">Discord</a><br>
+  <a href="https://www.twitch.tv/darkishamethyst">Twitch</a>
+  
+  <hr> <div class="intro-container">
     <img src="IMG_4336.jpg" alt="Meme: yea im TRANS, transporting this bad order to the RIP track">
   
     <p class="intro-text">
       Hi, I'm Amethyst, a transgirl who really enjoys coding and is interested in roleplaying... So I was thinking about putting those two things together and that is how I came up with the idea of creating my MCRP called Realisations.
     </p>
   </div>
-</body>
+  
+</body> </html
