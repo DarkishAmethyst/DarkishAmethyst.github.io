@@ -5,3 +5,20 @@ html, body {
 a {
   color: #2b422b;
 }
+.intro-container {
+  display: flex;         /* Activates the flexible box layout */
+  align-items: flex-start; /* Aligns items to the top (in case they have different heights) */
+  gap: 20px;             /* Adds space between the image and the text */
+  margin-top: 20px;      /* Optional: Adds space below the social links */
+}
+
+.intro-container img {
+  /* Control the size of the image relative to the container */
+  max-width: 300px; /* Adjust this value to control the image width */
+  height: auto;
+}
+
+.intro-text {
+  /* Ensures the text takes up the remaining space */
+  flex-grow: 1;
+}
