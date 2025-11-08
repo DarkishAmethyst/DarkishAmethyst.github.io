@@ -14,7 +14,7 @@ a {
 
 .intro-container img {
   /* Control the size of the image relative to the container */
-  max-width: 300px; /* Adjust this value to control the image width */
+  max-width: 140px; !important; /* Adjust this value to control the image width */
   height: auto;
 }
 
